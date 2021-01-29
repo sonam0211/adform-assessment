@@ -1,0 +1,26 @@
+table {
+  margin: 70px 50px 0;
+  border-spacing: 80px 40px;
+}
+
+.active {
+  background-color: green;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.inactive {
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+th {
+  text-align: start;
+}

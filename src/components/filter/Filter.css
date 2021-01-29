@@ -1,0 +1,13 @@
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 70px;
+}
+
+.date-container {
+  display: flex;
+}
+
+.date-margin {
+  margin-right: 30px;
+}
