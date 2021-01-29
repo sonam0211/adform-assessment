@@ -1,7 +1,7 @@
 ##### Clone git repo
 
 ```
-git clone https://github.com/sonam0211/adform.git
+git clone https://github.com/sonam0211/adform-assessment.git
 ```
 
 ##### To install packages
