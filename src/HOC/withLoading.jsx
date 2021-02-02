@@ -3,7 +3,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { isLoadingSelector } from '../redux/selector';
 
-function WithLoading(WrappedComponent) {
+const WithLoading = (WrappedComponent) => {
   return function WihLoadingComponent() {
     const isLoading = useSelector(isLoadingSelector);
 
@@ -14,5 +14,5 @@ function WithLoading(WrappedComponent) {
       </div>
     );
   };
-}
+};
 export default WithLoading;

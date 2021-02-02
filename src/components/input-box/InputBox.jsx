@@ -8,7 +8,7 @@ const InputBox = (props) => (
     data-testid="inputField"
     type="text"
     placeholder={props.label}
-    className="container"
+    className="input-container"
     value={props.text}
     onChange={(event) => props.onChange(event.target.value)}
   />

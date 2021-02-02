@@ -6,8 +6,18 @@
 
 .date-container {
   display: flex;
+  flex-basis: 50%;
 }
 
 .date-margin {
   margin-right: 30px;
+  flex-basis: 50%;
+}
+
+.input-flex {
+  flex-basis: 25%;
+}
+
+.date-flex {
+  flex-basis: 50%;
 }

@@ -16,43 +16,42 @@ const theads = [
 const CampaignDisplay = ({ rows, findName, findActive }) => {
   return (
     <>
-      <table data-testid="tableField">
-        <thead>
-          <tr>
-            {theads.map((thead) => {
-              return <th key={thead}>{thead}</th>;
-            })}
-          </tr>
-        </thead>
+      <div className="grid" data-testid="tableField">
+        {theads.map((thead) => {
+          return (
+            <span key={thead}>
+              <strong>{thead}</strong>
+            </span>
+          );
+        })}
 
-        <tbody>
-          {rows.map((row) => {
-            return (
-              <tr key={row.id}>
-                <td>{row.name}</td>
-                <td>{findName(row.userId)}</td>
-                <td>{row.startDate}</td>
-                <td>{row.endDate}</td>
-                <td>
-                  <span
-                    className={`${
-                      findActive(row.startDate, row.endDate) === true
-                        ? 'active'
-                        : 'inactive'
-                    }`}
-                  ></span>
-                  <span>{`${
+        {rows.map((row) => {
+          return (
+            <>
+              <span>{row.name}</span>
+              <span>{findName(row.userId)}</span>
+              <span>{row.startDate}</span>
+              <span>{row.endDate}</span>
+              <span>
+                <span
+                  className={`${
                     findActive(row.startDate, row.endDate) === true
                       ? 'active'
                       : 'inactive'
-                  }`}</span>
-                </td>
-                <td>{` ${abbrNum(row.Budget, 1)} USD`}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+                  }`}
+                ></span>
+                <span>{`${
+                  findActive(row.startDate, row.endDate) === true
+                    ? 'active'
+                    : 'inactive'
+                }`}</span>
+              </span>
+
+              <span>{` ${abbrNum(row.Budget, 1)} USD`}</span>
+            </>
+          );
+        })}
+      </div>
     </>
   );
 };

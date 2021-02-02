@@ -49,14 +49,15 @@ const Filter = () => {
               label="Start-Date"
             ></Date>
           </div>
-
-          <Date
-            onChange={(value) => formatEndDate(value)}
-            text={endDate}
-            label="End-Date"
-          ></Date>
+          <div className="date-flex">
+            <Date
+              onChange={(value) => formatEndDate(value)}
+              text={endDate}
+              label="End-Date"
+            ></Date>
+          </div>
         </div>
-        <div>
+        <div className="input-flex">
           <InputBox
             onChange={(value) => filterByName(value)}
             text={name}
