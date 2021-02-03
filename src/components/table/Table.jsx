@@ -19,7 +19,7 @@ const CampaignDisplay = ({ rows, findName, findActive }) => {
       <div className="grid" data-testid="tableField">
         {theads.map((thead) => {
           return (
-            <span key={thead}>
+            <span className="table-heading" key={thead}>
               <strong>{thead}</strong>
             </span>
           );

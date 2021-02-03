@@ -1,7 +1,7 @@
 .filter-container {
   display: flex;
   justify-content: space-between;
-  margin: 30px 70px;
+  margin: 30px 70px 60px;
 }
 
 .date-container {
